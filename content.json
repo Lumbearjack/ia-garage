@@ -1,0 +1,63 @@
+[
+    {
+        "id":"1707141355",
+        "category": "article",
+        "tags": "megaman",
+        "title": "New conceptual title 'Megaman' looks to revamp failed Mighty No. 9 in new vision",
+        "author": "Author Name",
+        "date": "07.14",
+        "excerpt": "Will this rebranding of 'the greatest failure of our time' help save the face of arm-cannoned platforming?",
+        "thumbnail": "img/mm7.jpeg",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur, possimus quis quos error reprehenderit iure dolores libero, totam quaerat. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur.</p><p>Soluta natus sint tempore, laudantium facilis consequatur, <a href='#link'>possimus quis quos error</a> reprehenderit iure dolores libero.</p><p>Consectetur adipisicing elit. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur, possimus quis quos error reprehenderit iure dolores libero, totam quaerat.</p><p>Soluta natus sint tempore, laudantium facilis consequatur, possimus quis quos error reprehenderit iure dolores libero.</p><img src='img/zelda.jpeg' alt='image'><span class='caption'>This here is a caption</span><p>Lorem ipsum dolor sit amet, adipisicing elit. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis, possimus quis quos error reprehenderit iure dolores libero, totam quaerat. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur.</p><p>Consectetur adipisicing elit. Rem possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur, possimus quis quos error reprehenderit iure dolores libero, totam quaerat.</p><p>Natus sint tempore, laudantium facilis consequatur, <a href='#link2'>possimus quis quos error</a> iure dolores libero.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur, possimus quis quos error reprehenderit iure dolores libero, totam quaerat. Rem voluptatibus possimus culpa nisi? Soluta natus sint tempore, laudantium facilis consequatur.</p>"
+    },
+    {
+        "id":"1707141358",
+        "category": "news",
+        "tags": "halo",
+        "title": "In Halo 6 Master Chief visits aliens and breaks their stupid houses.",
+        "author": "Author Name",
+        "date": "07.14",
+        "excerpt": "Here the OG MC can be seen hurling obscenities from the assaulted alien's perspective.",
+        "thumbnail": "img/mc.jpeg"
+    },
+    {
+        "id":"1707141407",
+        "category": "article",
+        "tags": "prey",
+        "title": "Pray for prey",
+        "author": "Author Name",
+        "date": "07.14",
+        "excerpt": "",
+        "thumbnail": "img/prey.jpg"
+    },
+    {
+        "id":"1707141408",
+        "category": "video",
+        "tags": "monster hunter",
+        "title": "Monster Hunter is a video game",
+        "author": "Author Name",
+        "date": "07.14",
+        "excerpt": "",
+        "thumbnail": "img/mh.jpeg"
+    },
+    {
+        "id":"1707141409",
+        "category": "news",
+        "tags": "starwars",
+        "author": "Author Name",
+        "date": "07.14",
+        "title": "Going to go watch a Star War",
+        "excerpt": "",
+        "thumbnail": "img/sw.jpg"
+    },
+    {
+        "id":"1707141410",
+        "category": "news",
+        "tags": "owlboy",
+        "author": "Author Name",
+        "date": "07.14",
+        "title": "Is he an Owl? Is he a boy? Try Both!",
+        "excerpt": "He's a mutha flippin owl boy",
+        "thumbnail": "img/owl.png"
+    }
+]
