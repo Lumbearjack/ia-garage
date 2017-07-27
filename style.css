@@ -257,6 +257,9 @@ article .article-content{
 article .article-content>*{
   margin-bottom:16px;
 }
+article .article-content>*:first-child{
+  margin-top:0;
+}
 article .article-content>*:last-child{
   /*margin-bottom:12px;*/
 }
@@ -278,6 +281,14 @@ article .article-content .caption{
   font-size:0.9em;
   font-style: italic;
   text-align: center;
+}
+article .article-content .divider{
+  margin:2em 0;
+  opacity:0.3;
+}
+article .article-content #more-from{
+  font-style: italic;
+  font-weight: 700;
 }
 .triangle-container{
   width:100%;
