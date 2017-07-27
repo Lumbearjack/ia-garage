@@ -224,7 +224,7 @@ section .item:hover h2 a{
   font-size:16px;
 }
 .item .item-excerpt, .item .item-meta-data{
-  margin-top:10px;
+  margin-top:14px;
 }
 .image-overlay{
   position:absolute;
@@ -270,10 +270,10 @@ article{
 article .article-content{
   padding:32px;
   padding-top:24px;
-
 }
 article .article-content>*{
-  margin-bottom:16px;
+  margin-top:0;
+  margin-bottom:20px;
 }
 article .article-content>*:last-child{
   /*margin-bottom:12px;*/
@@ -281,22 +281,29 @@ article .article-content>*:last-child{
 article .item--alpha{
   width:100%;
   padding-bottom:48.731%;
+  box-shadow:none;
 }
 article .heading{
   margin-bottom:10px
+}
+article .item--alpha .textbox .item-excerpt{
+  display:none;
+}
+article .article-content *:first-child{
+  margin-top:0;
 }
 article .article-content p, article .article-content .caption{
   color:#424242;
 }
 article .article-content p{
-  line-height:1.4;
+  line-height:1.7;
 }
 article .article-content a:hover{
   background-color:lightgrey;
 }
 article .article-content img{
   width:100%;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 article .article-content .caption{
   display:block;
@@ -328,15 +335,31 @@ article .article-content .caption{
 
 
 @media (min-width: 769px) {
-
+  article{
+    border-radius:3px;
+    margin:0 20px;
+  }
+  article .item--alpha .textbox{
+    margin:32px;
+  }
+  article .item--alpha .textbox .item-title{
+    font-size:48px;
+  }
   .featured-big, .featured-small{
     vertical-align: top;
     display:inline-block;
-    width:50%;
+    width:calc(50% - 10px);
+  }
+  .featured-big{
+    margin-right:20px;
+  }
+  .featured-big .item{
+    width: calc(100%);
+    padding-bottom: calc(100%);
   }
   .featured-small .item{
-    width: calc(50% - 20px);
-    padding-bottom: calc(50% - 20px);
+    width: calc(50% - 10px);
+    padding-bottom: calc(50% - 10px);
   }
   .featured-small .item:nth-child(odd){
     margin-right:20px;
@@ -351,10 +374,16 @@ article .article-content .caption{
     width:100%;
   }
   #more .featured-small .item{
-    width: calc(25% - 20px);
+    width: calc(25% - 25px);
     padding-bottom: calc(25% - 20px);
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+  #more .featured-small .item:last-child{
+    margin-right: 0px;
+  }
+  #more h1{
+    margin:40px 20px 0px 20px ;
   }
 }
 
@@ -381,6 +410,9 @@ article .article-content .caption{
     width:100%;
     margin:0;
   }
+  article {
+    margin:0px;
+  }
   .wrapper{
     margin:10px;
   }
@@ -388,6 +420,11 @@ article .article-content .caption{
     width:100%;
   }
   .featured-big, .featured-small{
+    vertical-align: top;
+    display:inline-block;
+    width: calc(100%);
+  }
+   #more .featured-big, #more .featured-small{
     vertical-align: top;
     display:inline-block;
     width: calc(100% - 20px);
