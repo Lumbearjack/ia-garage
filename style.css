@@ -81,12 +81,21 @@ h2{
 nav{
 }
 .navi-wrap{
+  box-sizing: border-box;
   position: sticky;
   top: 20px;
   display: flex;
   flex-direction: column;
-  text-align: right;
-  min-width:110px;
+  text-align: center;
+  width:250px;
+  /*padding-right:40px;*/
+}
+.navi-wrap a:first-child{
+  margin-bottom:10px;
+  margin-right:0;
+}
+.navi-wrap a {
+  color:#f0f0f0;
 }
 nav .logo-left{
   background: grey;
@@ -128,6 +137,9 @@ nav a{
 }
 nav a:hover{
   background:rgba(0,0,0,0.3);
+}
+nav .nav-logo{
+  width:100px;
 }
 .featured-small{
   font-size:0%;
