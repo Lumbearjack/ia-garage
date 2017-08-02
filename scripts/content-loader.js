@@ -66,6 +66,7 @@ $.ajax({
           </a>
           <div class="textbox">
             <h2 class="item-title"><a href="article.html?=`+article.id+`" >This is the featured title</a></h2>
+            <p class="item-excerpt"></p>
             <div class="item-meta-data">
               <span class="item-author"><a href="#authorspage"> Sir Author McLongName</a></span>
               <span class="item-date"><a href="#archivepage">17.06.23</a></span>

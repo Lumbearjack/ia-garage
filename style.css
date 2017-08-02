@@ -1,4 +1,4 @@
- http://meyerweb.com/eric/tools/css/reset/ 
+ /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -60,7 +60,9 @@ a{
   display: table;
   clear: both;
 }
-/*           */
+/*     VARIABLES      */
+
+
 h1{
   font-size: 28px;
   font-style: italic;
@@ -87,8 +89,7 @@ nav{
   display: flex;
   flex-direction: column;
   text-align: center;
-  width:250px;
-  /*padding-right:40px;*/
+  width:170px;
 }
 .navi-wrap a:first-child{
   margin-bottom:10px;
@@ -169,7 +170,7 @@ nav .nav-logo{
   background:#666;
   vertical-align: bottom;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  width: calc(100% - 20px);
+  width: calc(100% - var);
   padding-bottom: calc(100% - 20px);
 
 }
@@ -273,6 +274,37 @@ section .item:hover img{
   background:lightgrey;
   padding:10px;
 }
+#recent{
+  width:100%;
+}
+#recent .item{
+  width:100%;
+  display:flex;
+  padding-bottom:0;
+}
+#recent .item .item-imagecontainer{
+  width:100px;
+  height:100px;
+  margin:10px;
+  position:relative;
+  top:auto;right:auto;bottom:auto;left:auto;
+}
+#recent .item .textbox{
+  width:100%;
+  margin:10px;
+  position:relative;
+  top:auto;right:auto;bottom:auto;left:auto;
+}
+#recent .item .textbox .item-meta-data {
+    justify-content: left;
+}
+
+#recent .item .textbox .item-meta-data .item-author:after {
+    content: '·';
+    color:#f0f0f0;
+    font-weight:900;
+    margin:0 0.75em;
+}
 
 /* Article Styling */
 article{
@@ -349,7 +381,6 @@ article .article-content .caption{
 @media (min-width: 769px) {
   article{
     border-radius:3px;
-    margin:0 20px;
   }
   article .item--alpha .textbox{
     margin:32px;
@@ -357,6 +388,7 @@ article .article-content .caption{
   article .item--alpha .textbox .item-title{
     font-size:48px;
   }
+
   .featured-big, .featured-small{
     vertical-align: top;
     display:inline-block;
@@ -368,6 +400,12 @@ article .article-content .caption{
   .featured-big .item{
     width: calc(100%);
     padding-bottom: calc(100%);
+  }
+  #jumbotron .featured-big .item--alpha .textbox{
+    height: 50%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
   }
   .featured-small .item{
     width: calc(50% - 10px);
@@ -423,7 +461,7 @@ article .article-content .caption{
     margin:0;
   }
   article {
-    margin:0px;
+    margin:0 -10px;
   }
   .wrapper{
     margin:10px;
@@ -461,9 +499,14 @@ article .article-content .caption{
     width:100%;
     padding-bottom:48.731%;
   }
+  .item--alpha .textbox{
+    margin:14px;
+  }
+
   .item .item-excerpt{
     display:none;
   }
+
   article .article-content{
     padding:14px 18px 18px 18px;
   }
