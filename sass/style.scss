@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+$gutterSize: 10px;
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -108,7 +108,6 @@ nav .logo-left{
 }
 main{
   width:860px;
-
   margin: 0 20px;
 }
 aside{
@@ -395,7 +394,7 @@ article .article-content .caption{
     width:calc(50% - 10px);
   }
   .featured-big{
-    margin-right:20px;
+    margin-right:$gutterSize;
   }
   .featured-big .item{
     width: calc(100%);
@@ -408,16 +407,16 @@ article .article-content .caption{
     box-sizing: border-box;
   }
   .featured-small .item{
-    width: calc(50% - 10px);
-    padding-bottom: calc(50% - 10px);
+    width: calc(50% - ($gutterSize / 2));
+    padding-bottom: calc(50% -  ($gutterSize / 2));
   }
   .featured-small .item:nth-child(odd){
-    margin-right:20px;
+    margin-right:$gutterSize;
   }
 
   .featured-small .item:nth-child(1),
   .featured-small .item:nth-child(2){
-    margin-bottom:20px;
+    margin-bottom:$gutterSize;
   }
 
   #more .featured-small{
@@ -425,9 +424,9 @@ article .article-content .caption{
   }
   #more .featured-small .item{
     width: calc(25% - 25px);
-    padding-bottom: calc(25% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
+    padding-bottom: calc(25% - $gutterSize);
+    margin-right: $gutterSize;
+    margin-bottom: $gutterSize;
   }
   #more .featured-small .item:last-child{
     margin-right: 0px;
@@ -477,7 +476,7 @@ article .article-content .caption{
    #more .featured-big, #more .featured-small{
     vertical-align: top;
     display:inline-block;
-    width: calc(100% - 20px);
+    width: calc(100% - $gutterSize);
   }
   .featured-big .item{
     margin-right: 0px;
@@ -517,34 +516,6 @@ article .article-content .caption{
 
 
 @media (max-width: 380px) {
-/*  body{
-
-  }
-  nav{
-    display:none;
-  }
-  main{
-    width:100%;
-    margin:0;
-  }
-  aside{
-    display:none;
-  }
-  .wrapper{
-    margin:10px;
-  }
-  #jumbotron{
-    width:100%;
-  }
-  .item {
-    display:inline-block;
-    width: calc(50% - 5px);
-    padding-bottom: calc(50% - 5px);
-    margin-bottom:10px;
-  }
-  .item:nth-child(odd){
-    margin-right:10px;
-  }*/
   .item--alpha{
     width:100%;
     padding-bottom:48.731%;
@@ -559,8 +530,4 @@ article .article-content .caption{
     font-size:14px;
   }
 }
-
-
-
-
-/*.       
+  
